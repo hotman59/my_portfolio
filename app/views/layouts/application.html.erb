@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TestPortfolio</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>" media="screen"  charset="utf-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header id="main_navigation" class="clearfix">
+    <a href="#" class="name">benrahmane othman</a>
 
+
+  <nav>
+    <a href="#">Articles</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+  </header>
 <%= yield %>
 
 </body>
