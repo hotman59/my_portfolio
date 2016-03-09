@@ -9,13 +9,13 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-    
 <%= link_to "ben hotman", root_path, class: "name"%>
 
   <nav>
     <a href="#">Articles</a>
     <%= link_to "Projects", projects_path %>
-    <a href="#">Contact</a>
+    <%= link_to "Contacts", contacts_path %>
+    <!-- <a href="#">Contact</a> -->
   </nav>
   </header>
 <%= yield %>
