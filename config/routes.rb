@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   resources :posts
   resources :projects
-
+  resources :contacts
 
   root 'welcome#index'
   get 'contacts' => 'contacts#new'
+  get 'posts' =>'posts#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
