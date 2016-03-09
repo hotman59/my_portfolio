@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'bootstrap-sass', '~> 3.3.6'
+#redcarpet is for markdown
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'pygments.rb', '~> 0.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
