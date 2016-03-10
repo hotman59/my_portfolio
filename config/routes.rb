@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
   resources :projects
-  resources :contacts
+  
 
   root 'welcome#index'
   get 'contacts' => 'contacts#new'
