@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  resources :posts
+resources :projects
+
+    root to: "posts#index"
+  end
+
+
+
   resources :posts
   resources :projects
-  
+  resources :contacts
 
   root 'welcome#index'
-  get 'contacts' => 'contacts#new'
+  get 'contacts' => 'contacts#index'
   get 'posts' =>'posts#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

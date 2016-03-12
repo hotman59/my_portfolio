@@ -14,9 +14,6 @@
  @import "normalize";
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "posts";
- @import "projects";
- 
 $dark: 424652;
 $light: #9a9da4;
 $highlight: #8bc6db;
@@ -92,6 +89,4 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     margin: 4em 0 0 0;
     text-align: center;
   }
-
-
 }
