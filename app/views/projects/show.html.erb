@@ -4,6 +4,8 @@
     <%= @project.created_at.strftime('%A, %B %d') %>
   </p>
     <h1><%= @project.title %></h1>
+    <%= image_tag @project.picture.url(:medium) %>
+
     <hr>
 </header>
 
