@@ -3,12 +3,13 @@
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @projects.each do |project| %>
   <div class="post">
-    <p class="date"><%= project.created_at.strftime('%A, %B  %d') %></p>
     <h2>
       <a href="#"><%= link_to project.title, project %></a>
     </h2>
-    <%= image_tag project.picture.url(:thumb) %>
+    <p class="date"><%= project.created_at.strftime('%A, %B  %d') %></p>
     
+    <%= image_tag project.picture.url(:thumb) %>
+
     <hr>
   </div>
 

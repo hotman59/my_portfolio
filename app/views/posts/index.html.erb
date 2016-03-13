@@ -1,5 +1,5 @@
 <h2>salut mahboul</h2>
-
+<hr>
 
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @posts.each do |post| %>
@@ -8,6 +8,7 @@
     <h2>
       <a href="#"><%= link_to post.title, post %></a>
     </h2>
+    <%= image_tag post.image.url(:thumb) %>
     <hr>
   </div>
   <%end%>

@@ -11,6 +11,7 @@ class PostDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     content: Field::Text,
+    image: PaperclipField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -23,6 +24,7 @@ class PostDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :title,
+    :image,
     :content,
     :created_at,
   ]
@@ -32,6 +34,7 @@ class PostDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :title,
+    :image,
     :content,
     :created_at,
     :updated_at,
@@ -42,6 +45,7 @@ class PostDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :title,
+    :image,
     :content,
   ]
 
