@@ -11,11 +11,12 @@ resources :projects
 
   resources :posts
   resources :projects
-
+  resources :contacts, only: [:new, :create]
 
   root 'welcome#index'
   get 'contacts' => 'contacts#new'
   get 'posts' =>'posts#new'
+  get  '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
