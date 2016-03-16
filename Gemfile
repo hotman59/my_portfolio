@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise'
-
+gem 'font-awesome-sass'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 #redcarpet is for markdown

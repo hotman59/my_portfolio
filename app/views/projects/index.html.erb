@@ -7,9 +7,8 @@
       <a href="#"><%= link_to project.title, project %></a>
     </h2>
     <p class="date"><%= project.created_at.strftime('%A, %B  %d') %></p>
-    
+  
     <%= image_tag project.picture.url(:thumb) %>
-
     <hr>
   </div>
 

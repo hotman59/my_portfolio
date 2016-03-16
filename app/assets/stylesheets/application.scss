@@ -14,6 +14,10 @@
  @import "normalize";
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome-sprockets";
+@import "font-awesome";
+ @import "welcome";
+
 $dark: 424652;
 $light: #9a9da4;
 $highlight: #8bc6db;
@@ -46,7 +50,6 @@ font-family: 'Raleway', sans-serif;
 
 .clearfix:after {
   clear: both;
-
 }
 h1, h2, h3, h4, h5, h6, p, ul, li{
   color: $dark;
@@ -74,10 +77,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
       color: $dark;
       text-decoration: none;
       margin: 0 1rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
     }
   }
+
+
+
+
   .project_button{
     background: $highlight;
     color: $white;
