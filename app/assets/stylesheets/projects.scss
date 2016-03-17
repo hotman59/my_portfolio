@@ -1,19 +1,23 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#admin_links{
-  border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
-    text-align: center;
-    padding: 1em 0;
-    margin: 3em 0;
-    a{
-      color: $light;
-      margin: 0 1em;
-      font-weight: 700;
-      font-size: .8em;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+
+#posts_wrapper{
+  padding: 3em 0;
 }
+
+.date{
+  text-align: center;
+
+}
+#posts_wrapper h2{
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2em;
+
+
+}
+
+.mini_pict{
+  text-align: center;
 }

@@ -17,6 +17,7 @@
  @import "font-awesome-sprockets";
 @import "font-awesome";
  @import "welcome";
+ @import "projects";
 
 $dark: 424652;
 $light: #9a9da4;
@@ -28,6 +29,7 @@ $white: #FFFFFF;
 body{
 font-family: 'Raleway', sans-serif;
 }
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
