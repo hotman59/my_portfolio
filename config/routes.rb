@@ -1,11 +1,23 @@
 Rails.application.routes.draw do
+  devise_for :users
+  namespace :admin do
+  resources :posts
+resources :projects
+
+    root to: "posts#index"
+  end
+
+
+  resources :welcome
   resources :posts
   resources :projects
-  
+  resources :contacts, only: [:new, :create]
 
   root 'welcome#index'
   get 'contacts' => 'contacts#new'
   get 'posts' =>'posts#new'
+  get 'cv'  => 'welcome#show'
+  get  '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

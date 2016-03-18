@@ -1,19 +1,19 @@
-<h1>index projects</h1>
-
+<h1 id="page_title">index projects</h1>
+<hr>
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @projects.each do |project| %>
   <div class="post">
     <p class="date"><%= project.created_at.strftime('%A, %B  %d') %></p>
+
     <h2>
       <a href="#"><%= link_to project.title, project %></a>
     </h2>
+    <div class="mini_pict">
+
+      <%= image_tag project.picture.url(:thumb) %>
+    </div>
     <hr>
   </div>
+
   <%end%>
 </div>
-<div class="digg_pagination">
-    <div class="page_info">
-      <%= page_entries_info @posts %>
-    </div>
-    <%= will_paginate @posts, :container => false %>
-  </div>

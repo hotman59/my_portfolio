@@ -1,6 +1,6 @@
 <h1 id="page_title">page contact 1</h1>
 
-<div class="">
+<div class="container" id="contact_container">
   <%= form_for @contact do |f| %>
   <%= f.label :name %><br>
   <%= f.text_field :name, required: true %>
@@ -9,7 +9,7 @@
   <%= f.text_field :email, required: true %>
   <br>
   <%= f.label :message %><br>
-  <%= f.text_field :message, as: :text %>
+  <%= f.text_area :message, as: :text %>
 
   <div class="hidden">
     <%= f.label :nickname %><br>

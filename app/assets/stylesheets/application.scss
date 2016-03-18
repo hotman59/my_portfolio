@@ -14,9 +14,11 @@
  @import "normalize";
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "posts";
+ @import "font-awesome-sprockets";
+@import "font-awesome";
+ @import "welcome";
  @import "projects";
- 
+
 $dark: 424652;
 $light: #9a9da4;
 $highlight: #8bc6db;
@@ -27,6 +29,7 @@ $white: #FFFFFF;
 body{
 font-family: 'Raleway', sans-serif;
 }
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -49,7 +52,6 @@ font-family: 'Raleway', sans-serif;
 
 .clearfix:after {
   clear: both;
-
 }
 h1, h2, h3, h4, h5, h6, p, ul, li{
   color: $dark;
@@ -77,10 +79,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
       color: $dark;
       text-decoration: none;
       margin: 0 1rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
     }
   }
+
+
+
+
   .project_button{
     background: $highlight;
     color: $white;
@@ -92,6 +98,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     margin: 4em 0 0 0;
     text-align: center;
   }
-
-
+  #admin_links{
+    border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
+      text-align: center;
+      padding: 1em 0;
+      margin: 3em 0;
+      a{
+        color: $light;
+        margin: 0 1em;
+        font-weight: 700;
+        font-size: .8em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+  }
 }
